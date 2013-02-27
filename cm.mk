@@ -4,9 +4,11 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 # Inherit device configuration for p500.
 $(call inherit-product, device/lge/p500/p500.mk)
 
+# Inherit CM specific Stuff
+$(call inherit-product, vendor/cm/config/tiny.mk)
+
 TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 320
-$(call inherit-product, vendor/cm/config/tiny.mk)
 
 # Overrides
 PRODUCT_NAME := cm_p500
